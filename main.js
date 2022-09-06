@@ -19,9 +19,10 @@ const likeCallback=(e)=>{
   })
   .catch(function(error){
     const modal = document.getElementById('modal');
-    modal.className = '';
-    mmodal.innerText = console.error;
+    modal.className = 'hidden';
+    modal.innerText = console.error;
     setTimeout(() =>modal.className = 'hidden',3000);
+    
   });
 }
 for (const glyph of articleHearts){
